@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- container -->
+    <div class="container">
+      <!-- row -->
+      <div class="row">
+        <!-- left box -->
+        <div class="left__grdnt">
+          <img class="fr__logo" src="images/card-logo.svg" alt="logo card">
+          <img class="card bg-front" src="images/bg-card-front.png" alt="front card">
+          <h3>0000 0000 0000 0000</h3>
+          <small>Jane Appleseed</small>
+          <small class="exp__date">09/00</small>
+          <img class="card bg-back" src="images/bg-card-back.png" alt="back card">
+          <small class="bg__small">000</small>
+        </div>
+        <!-- left box -->
+        <!-- right box -->
+        <div class="right__set">
+          <div>
+            <form id="form__submt">
+              <!-- name -->
+              <div>
+                <p>Cardholder Name</p>
+                <input class="card-fill name" id="js__name" type="text" placeholder="e.g. Jane Appleseed">
+                <small id="error-name"></small>
+              </div>
+              <!-- name -->
+              <!-- number -->
+              <div>
+                <p>Card Number</p>
+                <input class="card-fill number" id="js__number" type="text" placeholder="e.g. 1234 5678 9123 0000">
+                <small id="error-number"></small>  
+              </div>
+              <!-- number -->
+              <!-- mm/yy/cvc -->
+              <div>
+                <p>Exp. Date (MM/YY)</p>
+                <input class="card-fill month" id="js__month" type="text" placeholder="MM">
+                <small id="error-month"></small>
+                <input class="card-fill year" id="js__year" type="text" placeholder="YY">
+                <!-- <p>CVC</p> -->
+                <input class="card-fill sc__number" id="js__sc" type="text" placeholder="e.g. 123">
+                <small id="error-sc"></small>
+              </div>
+              <!-- mm/yy/cvc -->
+              <!-- submit section -->
+              <div>
+                <button class="btn__confirm" id="btnSubmit" onclick="functionError()">
+                  Confirm
+                </button>
+              </div>
+              <!-- submit section (confirm correct submission) -->
+            </form>
+          </div>
+        </div>
+        <!-- right box -->
+      </div>
+      <!-- row -->
+    </div>
+  <!-- container -->
+  
+  <!-- success submission -->
+
+  <!-- success submission -->
+
+  <!-- Completed state start -->
+  <!-- Thank you!
+  We've added your card details
+  Continue -->
+  <script src="js/script.js"></script>
+</body>
+</html>

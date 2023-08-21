@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    /* Primary */
+    --active-input-order: hsl(249, 99%, 64%);
+    --active-input-order-2: hsl(278, 94%, 30%);
+    --red-input-errors: hsl(0, 100%, 66%);
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --light-grayish-violet: hsl(270, 3%, 87%);
+    --dark-grayish-violet: hsl(279, 6%, 55%);
+    --very-dark-violet: hsl(278, 68%, 11%);
+}
+
+body{
+    font-family: 'Space Grotesk', sans-serif;
+    /* font-size: 18px; */
+    width: 100%;
+    max-width: 1440px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left__grdnt {
+    background-color: var(--very-dark-violet);
+    width: 483px;
+    height: 900px;
+    flex-shrink: 0;
+}
+
+.left__grdnt h3{
+    color: var(--white);
+    position: relative;
+    font-size: 28px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    left: 9rem;
+    top: -2rem;
+    letter-spacing: 3.422px;
+    /* z-index: 3; */
+}
+
+.left__grdnt small{
+    color: var(--white);
+    left: 9rem;
+    top: -1rem;
+    font-size: 14px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 2px;
+    position: relative;
+    /* z-index: 3; */
+    text-transform: uppercase;
+}
+
+.left__grdnt .exp__date{
+    color: var(--white);
+    left: 20rem;
+    text-align: right;
+    font-size: 14px;
+    font-family: 'Space Grotesk', sans-serif;
+    position: relative;
+    z-index: 3;
+}
+
+.left__grdnt .bg__small{
+    font-family: 'Space Grotesk', sans-serif;
+    position: relative;
+    left: 36.5rem;
+    top: -4.8rem;
+    text-align: right;
+    z-index: 3;
+}
+
+.fr__logo {
+    position: absolute;
+    width: 84px;
+    height: 47px;
+    top: 6rem;
+    left: 9rem;
+    z-index: 4;
+}
+
+.card {
+    width: 447px;
+    height: 245px;
+}
+
+.bg-front {
+    position: relative;
+    top: 4rem;
+    left: 7rem;
+}
+
+.bg-back {
+    position: relative;
+    left: 14rem;
+    top: 4rem;
+}
+
+.right__set p{
+    color: var(--very-dark-violet);
+    font-family: 'Space Grotesk';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: 1rem;
+    right: 0rem;
+    top: -9rem;
+}
+/* input styles */
+.card-fill {
+    width: 381px;
+    height: 45px;
+    border-radius: 8px;
+    border: 1px solid var(--light-grayish-violet);
+    margin: 0.5rem 0 1rem 0;
+    position: relative;
+    bottom: 0.4rem;
+}
+
+.card-fill .error{
+    border: 1px solid --red-input-errors;
+}
+
+.card-fill::placeholder{
+    padding: 0 1rem;
+    color: var(--dark-grayish-violet);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+/* input by name & number */
+/* .name {
+
+}
+
+.number {
+
+} */
+/* input year month submt */
+.month {
+    width: 80px;
+    height: 45px;
+}
+
+.year {
+    width: 80px;
+    height: 45px;
+}
+
+.sc__number {
+    width: 191px;
+    height: 45px;   
+}
+
+small{
+    color: var(--red-input-errors);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+} 
+
+#error-name, #error-number{ 
+    position: relative;
+    display: block;
+    top: -1rem;
+    right: 0px;
+    bottom: 3rem;
+} 
+
+#error-month{
+    position: relative;
+    top: 2rem;
+    right: 5rem;
+} 
+
+#error-sc{
+    position: relative;
+    top: 2rem;
+    right: 11.5rem;
+} 
+
+.btn__confirm {
+    background-color: var(--very-dark-violet);
+    border-radius: 8px;
+    border-top: none;
+    color: var(--white);
+    cursor: pointer;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    top: 1.5rem;
+    width: 381px;
+    height: 53px;
+}
+
+/* user error styles */
+
+/* user error styles */
+
+@media(max-width: 600px){
+
+}
